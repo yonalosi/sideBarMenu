@@ -214,7 +214,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vha-IG-6fp">
-                                                    <rect key="frame" x="5" y="5" width="165" height="33.5"/>
+                                                    <rect key="frame" x="10" y="5" width="210" height="33.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -222,13 +222,15 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="vha-IG-6fp" secondAttribute="trailing" constant="16" id="5gj-6z-gXz">
+                                                    <variation key="heightClass=compact-widthClass=compact" constant="10"/>
                                                     <variation key="heightClass=regular-widthClass=compact" constant="10"/>
                                                 </constraint>
                                                 <constraint firstItem="vha-IG-6fp" firstAttribute="top" secondItem="2oS-RO-3qX" secondAttribute="top" constant="8" id="IH9-cP-juY">
                                                     <variation key="heightClass=regular-widthClass=compact" constant="5"/>
                                                 </constraint>
                                                 <constraint firstItem="vha-IG-6fp" firstAttribute="leading" secondItem="2oS-RO-3qX" secondAttribute="leading" constant="8" id="Pdj-oZ-CK8">
-                                                    <variation key="heightClass=regular-widthClass=compact" constant="5"/>
+                                                    <variation key="heightClass=compact-widthClass=compact" constant="10"/>
+                                                    <variation key="heightClass=regular-widthClass=compact" constant="10"/>
                                                 </constraint>
                                                 <constraint firstAttribute="bottom" secondItem="vha-IG-6fp" secondAttribute="bottom" constant="8" id="R8n-y4-Pob">
                                                     <variation key="heightClass=regular-widthClass=compact" constant="5"/>
@@ -244,24 +246,42 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJN-dW-vUp">
-                                                    <rect key="frame" x="5" y="5" width="165" height="33.5"/>
+                                                    <rect key="frame" x="10" y="5" width="210" height="33.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="uJN-dW-vUp" firstAttribute="leading" secondItem="S80-07-9HJ" secondAttribute="leading" constant="5" id="4Y5-lJ-HRT"/>
+                                                <constraint firstItem="uJN-dW-vUp" firstAttribute="leading" secondItem="S80-07-9HJ" secondAttribute="leading" constant="5" id="4Y5-lJ-HRT">
+                                                    <variation key="heightClass=regular-widthClass=compact" constant="10"/>
+                                                </constraint>
+                                                <constraint firstItem="uJN-dW-vUp" firstAttribute="top" secondItem="S80-07-9HJ" secondAttribute="top" constant="5" id="4kZ-AW-4kB"/>
                                                 <constraint firstAttribute="bottom" secondItem="uJN-dW-vUp" secondAttribute="bottom" constant="5" id="U3v-8b-ah4"/>
+                                                <constraint firstItem="uJN-dW-vUp" firstAttribute="leading" secondItem="S80-07-9HJ" secondAttribute="leading" constant="10" id="YuY-Vm-gLO"/>
+                                                <constraint firstAttribute="trailing" secondItem="uJN-dW-vUp" secondAttribute="trailing" constant="10" id="c1S-YQ-2h8"/>
                                                 <constraint firstAttribute="trailing" secondItem="uJN-dW-vUp" secondAttribute="trailing" constant="10" id="dVq-rJ-Bzv"/>
+                                                <constraint firstAttribute="bottom" secondItem="uJN-dW-vUp" secondAttribute="bottom" constant="5" id="e8h-vU-kdq"/>
                                                 <constraint firstItem="uJN-dW-vUp" firstAttribute="top" secondItem="S80-07-9HJ" secondAttribute="top" constant="5" id="w8H-4l-Bu4"/>
                                             </constraints>
                                             <variation key="default">
                                                 <mask key="constraints">
                                                     <exclude reference="4Y5-lJ-HRT"/>
+                                                    <exclude reference="4kZ-AW-4kB"/>
                                                     <exclude reference="U3v-8b-ah4"/>
+                                                    <exclude reference="YuY-Vm-gLO"/>
+                                                    <exclude reference="c1S-YQ-2h8"/>
                                                     <exclude reference="dVq-rJ-Bzv"/>
+                                                    <exclude reference="e8h-vU-kdq"/>
                                                     <exclude reference="w8H-4l-Bu4"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="heightClass=compact-widthClass=compact">
+                                                <mask key="constraints">
+                                                    <include reference="4kZ-AW-4kB"/>
+                                                    <include reference="YuY-Vm-gLO"/>
+                                                    <include reference="c1S-YQ-2h8"/>
+                                                    <include reference="e8h-vU-kdq"/>
                                                 </mask>
                                             </variation>
                                             <variation key="heightClass=regular-widthClass=compact">
@@ -282,7 +302,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Logout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HB3-y0-36k">
-                                                    <rect key="frame" x="5" y="5" width="165" height="33.5"/>
+                                                    <rect key="frame" x="10" y="5" width="210" height="33.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -290,16 +310,34 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="HB3-y0-36k" firstAttribute="top" secondItem="CLg-Wc-3gb" secondAttribute="top" constant="5" id="ACg-7Z-B3E"/>
+                                                <constraint firstAttribute="bottom" secondItem="HB3-y0-36k" secondAttribute="bottom" constant="5" id="YVL-Np-DPb"/>
+                                                <constraint firstAttribute="trailing" secondItem="HB3-y0-36k" secondAttribute="trailing" constant="10" id="ZDA-4K-nHo"/>
                                                 <constraint firstAttribute="bottom" secondItem="HB3-y0-36k" secondAttribute="bottom" constant="5" id="jdL-qo-vYr"/>
-                                                <constraint firstItem="HB3-y0-36k" firstAttribute="leading" secondItem="CLg-Wc-3gb" secondAttribute="leading" constant="5" id="ryG-He-d4n"/>
+                                                <constraint firstItem="HB3-y0-36k" firstAttribute="top" secondItem="CLg-Wc-3gb" secondAttribute="top" constant="5" id="mmP-Tg-SbQ"/>
+                                                <constraint firstItem="HB3-y0-36k" firstAttribute="leading" secondItem="CLg-Wc-3gb" secondAttribute="leading" constant="10" id="qIZ-0n-65N"/>
+                                                <constraint firstItem="HB3-y0-36k" firstAttribute="leading" secondItem="CLg-Wc-3gb" secondAttribute="leading" constant="5" id="ryG-He-d4n">
+                                                    <variation key="heightClass=regular-widthClass=compact" constant="10"/>
+                                                </constraint>
                                                 <constraint firstAttribute="trailing" secondItem="HB3-y0-36k" secondAttribute="trailing" constant="10" id="wLz-H2-xP0"/>
                                             </constraints>
                                             <variation key="default">
                                                 <mask key="constraints">
                                                     <exclude reference="ACg-7Z-B3E"/>
+                                                    <exclude reference="YVL-Np-DPb"/>
+                                                    <exclude reference="ZDA-4K-nHo"/>
                                                     <exclude reference="jdL-qo-vYr"/>
+                                                    <exclude reference="mmP-Tg-SbQ"/>
+                                                    <exclude reference="qIZ-0n-65N"/>
                                                     <exclude reference="ryG-He-d4n"/>
                                                     <exclude reference="wLz-H2-xP0"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="heightClass=compact-widthClass=compact">
+                                                <mask key="constraints">
+                                                    <include reference="YVL-Np-DPb"/>
+                                                    <include reference="ZDA-4K-nHo"/>
+                                                    <include reference="mmP-Tg-SbQ"/>
+                                                    <include reference="qIZ-0n-65N"/>
                                                 </mask>
                                             </variation>
                                             <variation key="heightClass=regular-widthClass=compact">
