@@ -16,6 +16,7 @@
 		9D68FA9821AD9A4400B0564E /* SideBarMenuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D68FA9721AD9A4400B0564E /* SideBarMenuUITests.swift */; };
 		9D68FAA621ADA05E00B0564E /* SideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D68FAA521ADA05E00B0564E /* SideMenuVC.swift */; };
 		9D68FAA821ADA84E00B0564E /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D68FAA721ADA84E00B0564E /* MainVC.swift */; };
+		9D7E9A1321B09C630029CA35 /* HamburgerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7E9A1221B09C630029CA35 /* HamburgerButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		9D68FA9921AD9A4400B0564E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D68FAA521ADA05E00B0564E /* SideMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuVC.swift; sourceTree = "<group>"; };
 		9D68FAA721ADA84E00B0564E /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		9D7E9A1221B09C630029CA35 /* HamburgerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HamburgerButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 		9D68FA7621AD9A4300B0564E /* SideBarMenu */ = {
 			isa = PBXGroup;
 			children = (
+				9D7E9A1121B09C370029CA35 /* Utils */,
 				9D359A4C21B04B9E00764EBD /* Controllers */,
 				9D68FA7721AD9A4300B0564E /* AppDelegate.swift */,
 				9D68FA7B21AD9A4300B0564E /* Main.storyboard */,
@@ -137,6 +140,14 @@
 				9D68FA9921AD9A4400B0564E /* Info.plist */,
 			);
 			path = SideBarMenuUITests;
+			sourceTree = "<group>";
+		};
+		9D7E9A1121B09C370029CA35 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9D7E9A1221B09C630029CA35 /* HamburgerButton.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +284,7 @@
 				9D68FA7A21AD9A4300B0564E /* ContainerVC.swift in Sources */,
 				9D68FAA821ADA84E00B0564E /* MainVC.swift in Sources */,
 				9D68FA7821AD9A4300B0564E /* AppDelegate.swift in Sources */,
+				9D7E9A1321B09C630029CA35 /* HamburgerButton.swift in Sources */,
 				9D68FAA621ADA05E00B0564E /* SideMenuVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

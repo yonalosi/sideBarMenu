@@ -10,13 +10,21 @@ import UIKit
 
 class MainVC: UIViewController {
 
+    
     @IBOutlet weak var blackView: UIView!
     @IBOutlet weak var otherViewBtn: UIButton!
+    var button: HamburgerButton! = nil
+    let viewNavBtn = UIView(frame: CGRect(x: 0, y: 0, width: 60, height: 60))
     var isMenuOpen = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupGestures()
+        button = HamburgerButton(frame: CGRect(x: -8, y: -8, width: 60, height: 60))
+        self.button.addTarget(self, action: #selector(onMenuTapped), for:.touchUpInside)
+        viewNavBtn.addSubview(button)
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: viewNavBtn)
+        
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(showProfile),
                                                name: NSNotification.Name("ShowProfile"),
@@ -63,6 +71,7 @@ class MainVC: UIViewController {
     @objc func hideContent(){
         otherViewBtn.isEnabled = isMenuOpen
         blackView.isHidden = isMenuOpen
+        button.showsMenu = !button.showsMenu
         isMenuOpen = !isMenuOpen
     }
     
